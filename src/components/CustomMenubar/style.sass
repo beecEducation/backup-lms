@@ -1,0 +1,24 @@
+@import '../../assets/sass/variables.sass'
+
+
+.custom-menu
+  background-color: white
+  .custom-menu-view
+    margin-left: 60px
+    display: inline-flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    .view-child
+      cursor: pointer
+      font-size: 13px
+      font-weight: 500
+      padding: 20px 40px
+      border-right: 1px solid $gray-light
+      p
+        color: $black-light
+    .active
+      border-bottom: 3px solid $blue
+      p
+        color: $blue

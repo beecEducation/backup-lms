@@ -1,0 +1,1719 @@
+.hspt_report {
+    .fa {
+        font-family: fontAwesome !important;
+    }
+
+    .line-graph-labels {
+        font-size: 14px;
+    }
+
+    .side-border-left {
+        border-right: solid 2px #000000;
+    }
+
+    .side-border-right {
+        border-left: solid 2px #000000;
+    }
+
+    .line-graph {
+        width: 8px;
+        height: 8px;
+        border-radius: 50px;
+        margin: auto;
+    }
+
+    .line-graph.red {
+        background-color: #ff4f4f;
+    }
+
+    .line-graph.orange {
+        background-color: #fcb320;
+    }
+
+    .line-graph.green {
+        background-color: #04bd04;
+    }
+
+    .line-graph.orange-red {
+        background-color: #fc7c05;
+    }
+
+    .line-graph.dark-green {
+        background-color: #005e00;
+    }
+
+    .custom-table1 {
+        line-height: 29px !important;
+    }
+
+    .main-company-logo {
+        width: 100%;
+        padding-top: 2rem !important;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    ul {
+        padding: 0;
+        float: left;
+        width: 100%;
+        margin: 0;
+    }
+
+    ul li {
+        list-style-type: none;
+    }
+
+
+
+    table.student-custom-table.student-custom-table1.student-performance-table {
+        min-height: 590px;
+    }
+
+    .score-performace-section {
+        background: #0264B0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .score-performance-title h2 {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+    }
+
+    .student-detail-section {
+        border: 1px solid #040d37;
+        background: #ffffff;
+    }
+
+    .student-detail-section .coll {
+        padding: 15px;
+    }
+
+    .student-detail-section .coll.student-detail-col-right {
+        border-left: 1px solid #040d37;
+        padding-left: 45px;
+    }
+
+    .student-detail-section .coll.student-detail-col-right h5 {
+        margin-bottom: 15px;
+    }
+
+    .student-basis-detail {
+        float: left;
+        width: 100%;
+    }
+
+    .student-basis-detail ul li {
+        float: left;
+        width: 100%;
+    }
+
+    .student-basis-detail ul li .cs-left {
+        width: 22%;
+        float: left;
+    }
+
+    .student-basis-detail ul li .cs-right {
+        width: 78%;
+        float: left;
+    }
+
+    .student-basis-detail .cs-left span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: #040d37;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .student-basis-detail .cs-right span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: #040d37;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .student-basis-detail .cs-right span.write-name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: #da3969;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .student-detail-col-right .school-choices .form-check {
+        padding: 0;
+        float: left;
+        width: 100%;
+    }
+
+    .student-detail-col-right .school-choices .form-check p {
+        float: left;
+        min-width: 45px;
+        margin-right: 22px;
+        display: flex;
+        align-items: center;
+    }
+
+    .student-detail-col-right .school-choices .form-check p label {
+        float: left;
+        margin-right: 6px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .student-detail-col-right .school-choices .form-check p input {
+        float: left;
+        margin-left: 0;
+        background-color: #E6E7EB;
+        border: 1px solid #040D37;
+        border-radius: 0;
+        height: 39px;
+        width: 39px;
+        box-shadow: none;
+    }
+
+    .student-detail-col-right .school-choices .form-check p input:checked {
+        background-color: #0264B0;
+    }
+
+
+
+    .sample-school-section {
+        background: #E6E7EB;
+        border: 1px solid #040d37;
+        border-top: 0;
+    }
+
+    .sample-school-section .coll {
+        padding: 15px;
+    }
+
+    .sample-school-section .coll p {
+        margin: 0;
+        font-size: 18px;
+        line-height: 26px;
+        color: #0264B0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .sample-school-section ul li {
+        float: left;
+        width: 100%;
+    }
+
+    .sample-school-section ul li .cs-left {
+        width: 22%;
+        float: left;
+    }
+
+    .sample-school-section ul li .cs-right {
+        width: 78%;
+        float: left;
+    }
+
+    .sample-school-section .cs-left span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #040d37;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .sample-school-section .cs-right span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #040d37;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    /******************** table css********************/
+    .performance-table {
+        padding-bottom: 55px;
+        width: 100%;
+        background: #f2f2f2;
+        margin-top: 25px;
+    }
+
+    .performance-table .coll {
+        padding: 0;
+    }
+
+    .custom-table thead tr th {
+        white-space: nowrap;
+        background-color: #040d37;
+        color: #ffffff;
+        padding: 26px 10px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 26px;
+        font-weight: 700;
+        border: 0.5px solid #ffffff !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+    }
+
+    .custom-table thead tr th:first-child {
+        border-left: 1px solid #040d37 !important;
+    }
+
+    .custom-table thead tr th:last-child {
+        border-right: 1px solid #040d37 !important;
+    }
+
+    .custom-table tbody tr:nth-of-type(1) .page-header {
+        border: 0 !important;
+        background: #6ACBF0;
+        color: #ffffff;
+        border: 1px solid #040D37 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+
+    .custom-table tr td:nth-of-type(1) {
+        font-size: 16px;
+        line-height: 19px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .custom-table tr td {
+        font-size: 16px;
+        line-height: 19px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+
+    .custom-table tbody tr:nth-of-type(1) .page-header button.tbtn {
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 26px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        width: 100%;
+        text-align: left;
+    }
+
+    .custom-table tbody tr:nth-of-type(1) .page-header button.tbtn i {
+        text-align: right;
+        float: right;
+        padding-top: 5px;
+    }
+
+    .custom-table tr td:nth-of-type(4) {
+        // background: url(/images/red.png);
+        background-repeat: no-repeat;
+        background-position: 20px center;
+        padding-left: 35px;
+    }
+
+    .custom-table tr td:nth-of-type(5) {
+        // background: url(/images/light-orange.png);
+        background-repeat: no-repeat;
+        background-position: 20px center;
+        padding-left: 35px;
+    }
+
+    .custom-table tr td:nth-of-type(6) {
+        // background: url(/images/orange.png);
+        background-repeat: no-repeat;
+        background-position: 20px center;
+        padding-left: 35px;
+    }
+
+    .custom-table tr td:nth-of-type(7) {
+        // background: url(/images/yellow.png);
+        background-repeat: no-repeat;
+        background-position: 20px center;
+        padding-left: 35px;
+    }
+
+    .custom-table tr td:nth-of-type(8) {
+        // background: url(/images/green.png);
+        background-repeat: no-repeat;
+        background-position: 20px center;
+        padding-left: 35px;
+    }
+
+    .custom-table {
+        border-collapse: collapse;
+        width: 100%;
+        border: solid 1px #040d37;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        background-color: #ffffff;
+    }
+
+    .custom-table th,
+    .custom-table td {
+        text-align: left;
+        padding: 11px 8px;
+        border: solid 1px #040d37;
+    }
+
+    .custom-table th {
+        color: #000080
+    }
+
+    .custom-table>thead>tr {
+        background-color: #ffffff !important;
+    }
+
+    .tbtn {
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .toggler {
+        display: none;
+    }
+
+    .toggler1 {
+        display: table-row;
+    }
+
+    .custom-table a {
+        color: #0033cc;
+    }
+
+    .custom-table a:hover {
+        color: #f00;
+    }
+
+    .page-header {
+        background-color: #eee;
+    }
+
+
+
+
+    /************************ STS High School Placement Test************************/
+    .placement-heading-section .placement-heading-part-inner {
+        background: #0264B0;
+        border-radius: 10px;
+        padding: 27px 45px;
+        display: flex;
+        align-items: center;
+    }
+
+    .placement-heading-section .placement-heading-part .placement-heading-part-left {
+        float: left;
+        width: 75%;
+    }
+
+    .placement-heading-section .placement-heading-part .placement-heading-part-right {
+        float: left;
+        width: 25%;
+        padding-left: 45px;
+        border-left: 1px solid #ffffff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .placement-heading-section .placement-heading-part .placement-heading-part-left h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: left;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+    }
+
+    .placement-heading-section .placement-heading-part .placement-heading-part-left h1 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: left;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+    }
+
+
+
+    .placement-heading-section .placement-heading-part .placement-heading-part-right h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: left;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+    }
+
+    .placement-heading-section .placement-heading-part .placement-heading-part-right p {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: left;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+    }
+
+    .abrahm-col-left {
+        position: relative;
+    }
+
+    .abrahm-col-left-inner {
+        background: #ffffff;
+        float: left;
+        width: 100%;
+        padding: 15px 30px;
+    }
+
+    .abrahm-col-left::before {
+        border-left: 10px solid #DA3969;
+        content: "";
+        left: 12px;
+        position: absolute;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .abrahm-col-left-inner h3 {
+        font-size: 22px;
+        line-height: 26px;
+        color: #0264B0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+
+
+
+    .scholastic-col-right {
+        position: relative;
+    }
+
+    .scholastic-col-right-inner {
+        background: #ffffff;
+        float: left;
+        width: 100%;
+        padding: 15px 30px;
+    }
+
+    .scholastic-col-right::before {
+        border-left: 10px solid #DA3969;
+        content: "";
+        left: 12px;
+        position: absolute;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+
+    .abrahm-scholastic-section {
+        margin-top: 25px;
+    }
+
+
+    .abrahm-col-left-inner li {
+        display: inline-block;
+        width: 32.33%;
+    }
+
+    .abrahm-col-left-inner li:last-child {
+        width: 100%;
+    }
+
+    .abrahm-col-left-inner li .cs-left {
+        float: left;
+    }
+
+    .abrahm-col-left-inner li .cs-right {
+        float: left;
+    }
+
+    .abrahm-col-left-inner li .cs-left span {
+        font-size: 13px;
+        line-height: 18px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .abrahm-col-left-inner li .cs-right span {
+        font-size: 13px;
+        line-height: 18px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+
+
+    .scholastic-col-right-inner h3 {
+        font-size: 22px;
+        line-height: 26px;
+        color: #0264B0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .scholastic-col-right-inner h3 span {
+        font-size: 22px;
+        line-height: 26px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+
+    .scholastic-col-right-inner li {
+        display: inline-block;
+        width: 49%;
+    }
+
+    .scholastic-col-right-inner li .cs-left {
+        float: left;
+    }
+
+    .scholastic-col-right-inner li .cs-right {
+        float: left;
+    }
+
+    .scholastic-col-right-inner li .cs-left span {
+        font-size: 13px;
+        line-height: 18px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .scholastic-col-right-inner li .cs-right span {
+        font-size: 13px;
+        line-height: 18px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    .scholastic-col-right .scholastic-col-right-inner {
+        height: 100%;
+    }
+
+    .scholastic-col-right-inner ul {
+        padding-top: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .student-subtest-score {
+        margin-top: 25px;
+    }
+
+    .student-performance-text {
+        margin-top: 25px;
+        margin-bottom: 9px;
+    }
+
+    .student-performance-text p {
+        font-size: 13px;
+        line-height: 15px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    .custom-table1 {
+        border-collapse: collapse;
+        width: 100%;
+        border: solid 1px #040d37;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        background-color: #ffffff;
+    }
+
+    .student-subtest-score-right .student-subtest-score-right-inner {
+        background: #ffffff;
+    }
+
+    .custom-table1 td {
+        text-align: center;
+        padding: 11px 8px;
+        border: solid 1px #040d37;
+    }
+
+    .student-subtest-score-left-inner {
+        background: #ffffff;
+        height: 100%;
+    }
+
+    .student-subtest-score-left thead th {
+        padding: 19px 10px;
+        background: #6ACBF0;
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 21px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    tr.sub-names td {
+        font-size: 16px;
+        line-height: 19px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    tr.cs-coginative td {
+        border: 0;
+        border-right: 1px solid #000000;
+    }
+
+    tr.cs-basic td {
+        border: 0;
+        border-right: 1px solid #000000;
+    }
+
+    tr.cs-Verbal td,
+    tr.cs-Quantitative td,
+    tr.cs-Cognitive td,
+    tr.cs-Reading td,
+    tr.cs-Mathematics td,
+    tr.cs-Language td,
+    tr.cs-TotalSkills td {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border: 0 !important;
+        border-right: 1px solid #000000 !important;
+    }
+
+    td.color-blue.color-blue-italic {
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        color: #0264B0;
+        font-style: italic;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    td.color-blue {
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        color: #0264B0;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .custom-table5 td.color-blue,
+    td.color-blue {
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        color: #0264B0;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    tr.cs-Cognitive td,
+    tr.cs-TotalSkills td {
+        padding-bottom: 15px !important;
+        border-bottom: 1px solid #000000 !important;
+    }
+
+    .custom-table1 td:first-child {
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .custom-table1 tr td span:first-child {
+        padding-right: 15px;
+    }
+
+    .custom-table1 tr td span:last-child {
+        padding-left: 15px;
+    }
+
+    .performance-table.performance-table-2 .coll {
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        padding-right: calc(var(--bs-gutter-x) * .5);
+    }
+
+    td {
+        white-space: nowrap;
+    }
+
+
+
+    .student-subtest-score-right .student-subtest-score-right-inner {
+        background: #ffffff;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .student-subtest-score-right .student-subtest-score-right-inner .total-graph-heading .total-graph-heading-left {
+        width: 60%;
+        max-width: 355px;
+        float: left;
+    }
+
+    .student-subtest-score-right .student-subtest-score-right-inner .total-graph-heading .total-graph-heading-right {
+        width: 40%;
+        float: right;
+        text-align: right;
+    }
+
+    .student-subtest-score-right .student-subtest-score-right-inner #myChart {
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin-top: 25px !important;
+    }
+
+    .student-subtest-score-right .student-subtest-score-right-inner #myChart canvas.canvasjs-chart-canvas {
+        width: 100%;
+        /*height: 380px;*/
+    }
+
+    .total-graph-heading {
+        float: left;
+        width: 100%;
+    }
+
+    .student-subtest-score-right .student-subtest-score-right-inner .total-graph-heading .total-graph-heading-left p.graph-title {
+        font-size: 18px;
+        line-height: 21px;
+        color: #0264B0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+
+    .student-subtest-score-right .student-subtest-score-right-inner .total-graph-heading .total-graph-heading-left span {
+        font-size: 13px;
+        line-height: 15px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+
+    .student-subtest-score-right .student-subtest-score-right-inner .total-graph-heading .total-graph-heading-right .graph-title-right {
+        position: relative;
+        font-size: 13px;
+        line-height: 15px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+
+    .student-subtest-score-right .student-subtest-score-right-inner .total-graph-heading .total-graph-heading-right .graph-title-right::before {
+        content: "";
+        // width: 6px;
+        // height: 6px;
+        // background: #0264B0;
+        // color: #0264B0;
+        position: absolute;
+        margin-left: -15px;
+        margin-top: 5px;
+        border-radius: 99%;
+    }
+
+    .wrapper.wrapper-chart {
+        float: left;
+        width: 100%;
+    }
+
+    a.canvasjs-chart-credit {
+        display: none;
+    }
+
+
+
+    /************************ /STS High School Placement Test************************/
+
+
+    /************************ Total group************************/
+    .cs-group-mnp {
+        margin-top: 25px;
+    }
+
+    .placement-heading-section.placement-total-group .placement-heading-part .placement-heading-part-left {
+        float: left;
+        width: 62%;
+    }
+
+    .placement-heading-section.placement-total-group .placement-heading-part .placement-heading-part-right {
+        float: left;
+        width: 38%;
+        padding-left: 45px;
+        border-left: 1px solid #ffffff;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .placement-heading-section .placement-heading-part .cs-datagrade {
+        margin-top: 10px;
+    }
+
+    .placement-heading-section .placement-heading-part .cs-datagrade p.cs-date {
+        float: left;
+        width: 50%;
+    }
+
+    .placement-heading-section .placement-heading-part .cs-datagrade p.cs-grade {
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    .cs-group-mnp .coll {
+        display: flex;
+        position: relative;
+    }
+
+    .cs-group-mnp .coll-inner {
+        background: #ffffff;
+        float: left;
+        width: 100%;
+        padding: 20px;
+        position: relative;
+    }
+
+    .group-mnp-c1 {
+        position: relative;
+    }
+
+    .group-mnp-c1::before {
+        border-left: 10px solid #DA3969;
+        content: "";
+        left: 12px;
+        position: absolute;
+        height: 100%;
+        border-radius: 5px;
+        z-index: 9;
+    }
+
+    .cs-group-mnp .coll-inner ul {
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cs-group-mnp .coll-inner ul li {
+        height: 100%;
+        float: left;
+        width: 100%;
+    }
+
+    .cs-group-mnp .coll-inner ul li .cs-left {
+        float: left;
+        width: 50%;
+        font-size: 22px;
+        line-height: 26px;
+        color: #DA3969;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .cs-group-mnp .coll-inner ul li .cs-left span.group-mnp-score {
+        font-size: 13px;
+        line-height: 15px;
+        color: #0264B0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    .cs-group-mnp .coll-inner ul li .cs-right {
+        width: 50%;
+        float: left;
+        text-align: right;
+        overflow: hidden;
+    }
+
+    .cs-group-mnp .coll-inner ul li .cs-right span.mnp-circle-score {
+        border: 10px solid #DA3969;
+        border-radius: 99px;
+        padding: 23px;
+        float: right;
+        font-size: 32px;
+        line-height: 37px;
+        color: #0264B0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .cs-group-mnp .coll .coll-inner .group-mnp-choices {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+    }
+
+    .cs-group-mnp .coll .coll-inner .group-mnp-choices p.average-number {
+        font-size: 28px;
+        line-height: 33px;
+        color: #DA3969;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .cs-group-mnp .coll .coll-inner .group-mnp-choices p.cs-average {
+        font-size: 16px;
+        line-height: 19px;
+        color: #0264B0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    td.cs-lightgreen span {
+        background: rgba(37, 216, 56, 0.2);
+        border-radius: 12px;
+        color: #25D838;
+        padding: 2px 0px;
+    }
+
+    td.cs-lightpink span {
+        background: rgba(255, 0, 0, 0.2);
+        border-radius: 12px;
+        color: #FF0000;
+        padding: 2px 0px;
+    }
+
+    td.cs-lightblue span {
+        background: rgba(2, 100, 176, 0.2);
+        border-radius: 12px;
+        color: #0264B0;
+        padding: 2px 0px;
+    }
+
+
+    .frequency-distribution {
+        margin-top: 25px;
+        padding-bottom: 55px;
+        width: 100%;
+    }
+
+    .custom-table5 {
+        border-collapse: collapse;
+        width: 100%;
+        border: solid 1px #040d37;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        line-height: 18px;
+        background-color: #ffffff;
+    }
+
+    .custom-table5 th {
+        border: 1px solid #000000;
+    }
+
+    .custom-table5 td {
+        text-align: center;
+        padding: 11px 3px;
+        border: solid 1px #040d37;
+        font-size: 13px;
+        line-height: 18px;
+        color: #040D37;
+    }
+
+
+    .page-header-pink {
+        text-align: center;
+        color: #ffffff;
+        padding: 14px 10px;
+        background: #6ACBF0;
+        font-size: 18px;
+        line-height: 21px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .page-header-pink.heading-extra-text {
+        position: relative;
+    }
+
+    .page-header-pink.heading-extra-text span.page-header-text {
+        position: absolute;
+        font-size: 11px;
+        line-height: 13px;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        max-width: 150px;
+        right: 15px;
+        text-align: left;
+    }
+
+    .custom-table5 td.robo13-medium,
+    .robo13-medium {
+        font-size: 13px;
+        line-height: 15px;
+        color: #040D37;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    .cs-greybg {
+        background: #e6e7e8;
+    }
+
+    .custom-table5 td.pink-heading,
+    .pink-heading {
+        font-size: 16px;
+        line-height: 19px;
+        color: #DA3969;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .custom-table5 td.pink-heading-italic,
+    .pink-heading-italic {
+        font-style: italic;
+    }
+
+    td.bold-text {
+        font-weight: 700;
+    }
+
+
+    tr.skill-names td:first-child {
+        text-align: left;
+    }
+
+    tr.skill-names td {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    tr.skill-names td.cs-sub-child {
+        padding-left: 15px;
+    }
+
+    tr.skill-names td.cs-sub-childs {
+        padding-left: 30px;
+    }
+
+    tr.skill-names td.line-graph-wrap {
+        padding: 0;
+    }
+
+    tr.skill-names td.line-graph-wrap:last-child {
+        padding-right: 5px;
+    }
+
+    tr.skill-names td.line-graph-wrap:nth-of-type(5) {
+        padding-left: 5px;
+    }
+
+    .performance-table .coll {
+        padding-right: 10px;
+    }
+
+    .performance-table .coll:last-child {
+        padding-right: 0px;
+    }
+
+    /************************ /Total group************************/
+
+
+
+
+
+
+    /******************** /table css********************/
+
+
+    /***********************table changes***********************/
+    table.student-custom-table {
+        border: 0px solid #000000;
+        float: left;
+        width: 100%;
+    }
+
+    table.student-custom-table th {
+        font-size: 15px;
+        border: 1px solid #000000;
+        text-align: center;
+        background: #ffffff;
+        height: 50px;
+        border-top: 0;
+    }
+
+    table.student-custom-table th:nth-of-type(1) {
+        border: 0;
+        border-bottom: 1px solid #000000;
+    }
+
+    table.student-custom-table th:last-child {
+        border: 0;
+        border-bottom: 1px solid #000000;
+    }
+
+    table.student-custom-table td {
+        border-right: 1px solid #000000;
+        text-align: center;
+    }
+
+    td.heading-bold {
+        font-weight: 700;
+    }
+
+    th.rotate span {
+        transform: rotate(-90deg);
+        display: inline-block;
+        background: #ffffff;
+    }
+
+    .cs-low p {
+        background: red;
+        height: 6px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cs-minus-avg p {
+        background: orange;
+        height: 6px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cs-avg p {
+        background: yellow;
+        height: 6px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cs-plus-avg p {
+        background: #37e537;
+        height: 6px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cs-high p {
+        background: #077e36;
+        height: 6px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cs-low-td,
+    .cs-minus-avg-td,
+    .cs-av-td,
+    .cs-plus-avg-td,
+    .cs-high-td {
+        border: 0 !important;
+    }
+
+    tr.skills-headings td {
+        border: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    tr.skills-headings td:first-child {
+        border-right: 1px solid #000000;
+    }
+
+    tr.skills-headings td:nth-of-type(4) {
+        border-right: 1px solid #000000;
+    }
+
+    tr.skill-names td {
+        border: 0;
+    }
+
+    tr.skill-names td:nth-of-type(1),
+    tr.skill-names td:nth-of-type(4) {
+        border-right: 1px solid #000000;
+    }
+
+    table.student-custom-table th i {
+        display: inline;
+        font-size: 10px;
+        margin-right: 2px;
+    }
+
+    .performance-table-col-inner {
+        height: 100%;
+        border: 1px solid #000000;
+    }
+
+    .performance-table tr td {
+        font-size: 15px;
+    }
+
+    /***********************table changes***********************/
+
+
+
+
+    @media (min-width:0px) and (max-width:567px) {
+        .abrahm-col-left-inner li {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .student-subtest-score-right .student-subtest-score-right-inner .total-graph-heading .total-graph-heading-left {
+            width: 100%;
+            max-width: 355px;
+            float: left;
+        }
+
+        .student-subtest-score-right .student-subtest-score-right-inner .total-graph-heading .total-graph-heading-right {
+            width: 100%;
+            float: right;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .sample-school-section ul li .cs-left {
+            width: 35%;
+            float: left;
+        }
+
+        .sample-school-section ul li .cs-right {
+            width: 65%;
+            float: left;
+        }
+    }
+
+    @media (min-width:0px) and (max-width:767px) {
+        .score-performace-section {
+            background: #0264B0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .score-performance-title h2 {
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .student-detail-section .coll.student-detail-col-right {
+            border-left: 0px solid #040d37;
+            padding-left: 15px;
+        }
+
+        .student-detail-col-right .school-choices .form-check p {
+            float: left;
+            min-width: 30px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .student-detail-col-right .school-choices .form-check p label {
+            float: left;
+            margin-right: 6px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #040D37;
+            font-family: 'Roboto', sans-serif;
+            padding-top: 4px;
+        }
+
+        .student-detail-col-right .school-choices .form-check p input {
+            float: left;
+            margin-left: 0;
+            background-color: #E6E7EB;
+            border: 1px solid #040D37;
+            border-radius: 0;
+            height: 25px;
+            width: 25px;
+            box-shadow: none;
+        }
+
+        .placement-logo-part {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .placement-heading-section .placement-heading-part {
+            background: #0264B0;
+            border-radius: 10px;
+            padding: 20px 20px;
+            display: unset;
+            align-items: unset;
+        }
+
+        .placement-heading-section .placement-heading-part-inner {
+            background: #0264B0;
+            border-radius: 10px;
+            padding: 0px;
+            display: unset;
+            align-items: unset;
+        }
+
+        .placement-heading-section .placement-heading-part .placement-heading-part-left {
+            float: left;
+            width: 100%;
+        }
+
+        .placement-heading-section .placement-heading-part .placement-heading-part-right {
+            float: left;
+            width: 100%;
+            padding-left: 0;
+            border-left: 0;
+            padding-bottom: 10px;
+            border-top: 1px solid #ffffff;
+            margin-top: 15px;
+            padding-top: 15px;
+        }
+
+        .placement-heading-section .placement-heading-part .placement-heading-part-left h2 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .placement-heading-section .placement-heading-part .placement-heading-part-left h1 {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 37px;
+            text-align: center;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .placement-heading-section .placement-heading-part .placement-heading-part-right p {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 15px;
+            text-align: center;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .placement-heading-section .placement-heading-part .placement-heading-part-right h2 {
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .abrahm-col-left {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .abrahm-scholastic-section .abrahm-col-left {
+            padding: 0;
+        }
+
+        .abrahm-scholastic-section .scholastic-col-right {
+            padding: 0;
+        }
+
+        .abrahm-col-left::before {
+            left: 0px;
+        }
+
+        .scholastic-col-right::before {
+            left: 0px;
+        }
+
+        .placement-heading-section.placement-total-group .placement-heading-part .placement-heading-part-left {
+            float: left;
+            width: 100%;
+        }
+
+        .placement-heading-section.placement-total-group .placement-heading-part .placement-heading-part-right {
+            float: left;
+            width: 100%;
+            padding-left: 0;
+            border-left: 0;
+            padding-bottom: 10px;
+            border-top: 1px solid #ffffff;
+            margin-top: 15px;
+            padding-top: 15px;
+        }
+
+        .placement-heading-section .placement-heading-part .cs-datagrade p.cs-date {
+            float: left;
+            width: 50%;
+            text-align: left;
+        }
+
+        .student-subtest-score-left {
+            padding: 0;
+        }
+
+        .student-subtest-score-right {
+            padding: 0;
+        }
+
+        .frequency-distribution .coll {
+            padding: 0;
+        }
+    }
+
+    @media (min-width:0px) and (max-width:991px) {
+        .cs-group-mnp .coll {
+            display: block;
+            position: relative;
+            margin-bottom: 20px;
+            padding: 0;
+            min-width: 100%;
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+
+        .group-mnp-c1::before {
+            border-left: 10px solid #DA3969;
+            content: "";
+            left: 0;
+            position: absolute;
+            height: 100%;
+            border-radius: 5px;
+            z-index: 9;
+        }
+
+        .cs-group-mnp .coll-inner ul li .cs-left {
+            float: left;
+            width: 100%;
+            font-size: 20px;
+            line-height: 24px;
+            color: #DA3969;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+
+        .cs-group-mnp .coll-inner ul li .cs-right {
+            width: 100%;
+            float: left;
+            text-align: left;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+
+        .cs-group-mnp .coll-inner ul li .cs-right span.mnp-circle-score {
+            border: 10px solid #DA3969;
+            border-radius: 99px;
+            padding: 23px;
+            float: left;
+            font-size: 32px;
+            line-height: 37px;
+            color: #0264B0;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+
+        .cs-group-mnp .coll .coll-inner .group-mnp-choices {
+            position: unset;
+            width: 100%;
+            bottom: 0px;
+        }
+
+        .cs-group-mnp .coll .coll-inner .group-mnp-choices p.cs-average {
+            font-size: 16px;
+            line-height: 19px;
+            color: #0264B0;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .cs-group-mnp .coll:last-child {
+            margin: 0;
+        }
+
+        .student-subtest-score-left {
+            margin-bottom: 25px;
+        }
+
+        .student-subtest-score-right .student-subtest-score-right-inner .total-graph-heading .total-graph-heading-right .graph-title-right {
+            margin-left: 20px;
+        }
+
+        .performance-table .coll {
+            padding-right: 0px;
+            margin-bottom: 25px;
+        }
+
+        .performance-table .coll {
+            padding-right: 0px;
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        table.student-custom-table th {
+            font-size: 15px;
+            text-align: center;
+            background: #ffffff;
+            height: 50px;
+        }
+    }
+
+    @media (min-width:768px) and (max-width:991px) {
+        .abrahm-col-left-inner li {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .placement-heading-section .placement-heading-part {
+            float: left;
+            width: 84%;
+        }
+
+        .placement-heading-section .placement-logo-part {
+            float: left;
+            width: 16%;
+        }
+
+        .placement-heading-section .placement-heading-part .placement-heading-part-left h2 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .placement-heading-section .placement-heading-part .placement-heading-part-left h1 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        .placement-heading-section .placement-heading-part .placement-heading-part-right h2 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: left;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .placement-heading-section .placement-heading-part .placement-heading-part-right {
+            float: left;
+            width: 45%;
+            padding-left: 32px;
+            border-left: 1px solid #ffffff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .student-subtest-score-right .student-subtest-score-right-inner .total-graph-heading .total-graph-heading-left {
+            width: 100%;
+            max-width: 355px;
+            float: left;
+        }
+
+        .student-subtest-score-right .student-subtest-score-right-inner .total-graph-heading .total-graph-heading-right {
+            width: 100%;
+            float: left;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .student-subtest-score .coll {
+            width: 100%;
+        }
+
+    }
+
+    @media (min-width:768px) and (max-width:1100px) {
+        .page-header-pink:last-child {
+            padding-right: 70px;
+        }
+
+        .placement-heading-section.placement-total-group .placement-heading-part .placement-heading-part-left {
+            float: left;
+            width: 50%;
+        }
+
+        .placement-heading-section.placement-total-group .placement-heading-part .placement-heading-part-right {
+            float: left;
+            width: 50%;
+            padding-left: 45px;
+            border-left: 1px solid #ffffff;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    }
+
+    @media (min-width:992px) and (max-width:1100px) {
+        .abrahm-col-left-inner li {
+            display: inline-block;
+            width: 49%;
+        }
+
+        .placement-heading-section .placement-heading-part {
+            float: left;
+            width: 88%;
+        }
+
+        .placement-heading-section .placement-logo-part {
+            float: left;
+            width: 12%;
+        }
+
+        .placement-heading-section .placement-heading-part .placement-heading-part-left {
+            float: left;
+            width: 55%;
+        }
+
+        .placement-heading-section .placement-heading-part .placement-heading-part-right {
+            float: left;
+            width: 45%;
+            padding-left: 45px;
+            border-left: 1px solid #ffffff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    @media (min-width:1900px) and (max-width:10000px) {
+        section {
+            max-width: 1900px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+}

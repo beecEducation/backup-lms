@@ -1,0 +1,24 @@
+@import '../../assets/sass/variables.sass'
+.RadioButtonGreen
+    .radioSelector:not(:last-child)
+        margin-right: 0.5em
+    .radioSelector
+        input
+            display: none
+        input[type="radio"]:checked
+            +.radioSelectorInner
+                background-color: $green !important
+                border-color: $green !important
+        input[type="radio"]:checked
+            +.radioSelectorInner
+                .questionLabel
+                    color: $white
+        .radioSelectorInner
+            height: 60px
+            width: 60px
+            border-radius: 50px
+            border: 2px solid $gray
+            cursor: pointer
+            @media ( max-width: 575px )
+                height: 50px
+                width: 50px

@@ -1,0 +1,248 @@
+@import '../../assets/sass/variables.sass'
+
+.modal-backdrop
+  &.show + .quiz-modal
+    opacity: 1!important
+    background-color: $gray-light
+// .quiz-modal
+//   transition-delay: 1.0s!important
+
+.pre-spaces-for-choice
+    white-space: pre-wrap
+.quiz-modal-heading
+  font-style: normal!important
+  font-weight: 400!important
+  font-size: 24px!important
+  color: $black-02
+.quiz-modal-body
+  font-style: normal
+  font-weight: 400
+  font-size: 18px
+  line-height: 175%
+  color: $black-02
+.quiz-view
+  margin: 0
+  padding: 0
+  background-color: $gray-light
+  min-height: 100vh
+  .quiz-topbar
+    background-color: $white
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    padding: 10px 30px
+    .first-item
+      flex: 4
+      font-size: $font-22
+      color: $black-light
+      font-weight: 700
+      margin-right: 20px
+    .last-item
+      display: flex
+      flex: 1
+      justify-content: end
+      align-items: center
+      .done-btn
+        background-color: $green-03
+        color: $white
+        border: none
+        outline: $green-03
+        width: 80px
+        height: 30px
+        margin-right: 20px
+      img
+        cursor: pointer
+        height: 30px
+        width: 30px
+  .menu-bar
+    background-color: $white
+    padding: 10px 10px 0px 10px
+    margin: 5px 0
+    .tool-bar
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      @media screen and (max-width: 600px)
+        justify-content: center
+        align-items: center
+
+      .tool-item
+        cursor: pointer
+        margin-right: 20px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .tool-icon
+          color: $blue
+          height: 25px
+          width: 25px
+        .tool-text
+          font-size: $font-13
+          font-weight: 400
+          color: $gray-03
+    .timer
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      .time
+        font-size: $font-18
+        font-weight: 700
+        color: $black-gray
+      .label
+        font-size: $font-13
+        font-weight: 500
+        color: $black-light
+    .left-menu
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: flex-start
+      align-items: center
+      @media screen and (max-width: 600px)
+        padding-bottom: 20px
+        padding-top: 20px
+
+      .skip-btn
+        border: 1px solid $blue
+        border-radius: 9px
+        background-color: $white
+        color: $blue
+        width: 100px
+        height: 40px
+        margin-right: 10px
+      .pre-btn
+        border: 1px solid $black-light
+        border-radius: 2px
+        background-color: $black-light
+        color: $white
+        width: 100px
+        height: 40px
+        margin-right: 10px
+      .next-btn
+        border: 1px solid $blue
+        border-radius: 2px
+        background-color: $blue
+        color: $white
+        width: 100px
+        height: 40px
+        margin-right: 10px
+      .flag-question
+        cursor: pointer
+        .flag-icon
+          color: $red-01
+        .flag-label
+          font-size: $font-12
+          font-weight: 600
+
+  .question-div
+    padding: 30px
+    background-color: $white
+    margin: 0
+    .question_side
+      overflow-y: auto
+      max-height: 65vh
+      @media screen and (max-width: 991px)
+        max-height: 55vh
+      @media screen and (min-width: 992px) and (max-width: 1199px)
+        max-height: 60vh
+    .scenario
+      padding-left: 60px
+      padding-right: 90px
+      // height: 700px
+      max-height: 65vh
+      overflow-y: scroll
+      border-right: 1px solid $gray-04
+      @media screen and (max-width: 991px)
+        max-height: 55vh
+      @media screen and (min-width: 992px) and (max-width: 1199px)
+        max-height: 60vh
+      .title
+        strong
+          font-size: $font-18
+          font-family: $SerifaStd !important
+          color: $black-03 !important
+      .description
+        margin-top: 30px
+        font-size: $font-16
+        font-weight: 400
+        color: $black-01
+        p
+          text-indent: 40px !important
+        table
+          border: 1px solid black
+          th
+            border: 1px solid black
+          tr
+            border: 1px solid black
+            td
+              border: 1px solid black
+        .passage
+          .title
+            span
+              font-size: $font-18
+              font-family: $SerifaStd !important
+              color: $black-03 !important
+          .passage_para
+            *
+              font-size: $font-14
+              color: $black-03 !important
+              text-align: justify
+              word-spacing: 2px
+            .italic
+              *
+                color: #111111 !important
+                font-size: $font-16
+            u
+              color: #111111 !important
+              font-size: $font-16
+            a
+              color: var(--bs-link-color) !important
+              font-size: $font-16
+              span
+                text-decoration: none 
+                color: #111111 !important
+                font-size: $font-16
+              .question-marker
+                  background-color: #0d6efd
+                  color: white !important
+                  font-size: medium
+                  padding: 0 10px
+                  border-radius: 10%
+                  text-decoration: none !important
+                  
+            .question-marker
+              background-color: #0d6efd
+              color: white !important
+              font-size: medium
+              padding: 0 10px
+              border-radius: 10%
+              text-decoration: none !important
+
+    .question
+      padding-left: 30px
+      display: flex
+      flex-direction: row
+      align-items: center
+      @media screen and (max-width: 600px)
+        border-top: 1px solid $gray-04
+        margin-top: 20px
+        padding-top: 20px
+      .question-no
+        font-size: $font-32
+        font-weight: 600
+        color: $black-01
+      .question-description
+        font-size: $font-16
+        font-weight: 400
+        color: $black-01
+        margin-left: 10px
+        p
+          margin-bottom: 0 !important
+          color: $black-03
+    .options
+      margin-top: 40px
+      padding-left: 30px
+      display: flex
+      flex-direction: column

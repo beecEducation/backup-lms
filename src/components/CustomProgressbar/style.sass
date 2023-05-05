@@ -1,0 +1,32 @@
+@import '../../assets/sass/variables'
+.parent-div
+  height: 20px
+  width: 100%
+  background-color: whitesmoke
+  border-radius: 40px
+
+
+.child-div
+  height: 100%
+  width: 100%
+  background-color: $blue
+  border-radius: 40px
+  display: flex
+  justify-content: end
+
+  .progress-label
+    text-align: center
+    min-width: 60px
+    margin-right: -30px
+    .label-text
+      font-size: 8px
+      margin-top: 10px
+      font-weight: 500
+      color: $gray-03
+    .label-score
+      font-size: 11px
+      color: $blue
+      font-weight: 600
+      margin-bottom: -10px
+    .label-icon
+      color: $gray-03

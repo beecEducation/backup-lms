@@ -1,0 +1,36 @@
+@import '../../assets/sass/variables.sass'
+.radioButtonWithSkipList
+    max-height: 200px
+    overflow: auto
+    ol
+        li
+            &::marker
+                font-weight: 600
+                font-size: $font-26
+                color: $black
+    .RadioButtonGreenWithSkip
+        margin-bottom: 0.5em
+        .radioSelector:not(:last-child)
+            margin-right: 0.5em
+        .radioSelector
+            input
+                display: none
+            input[type="radio"]:checked
+                +.radioSelectorInner
+                    background-color: $green !important
+                    border-color: $green !important
+            input[type="radio"]:checked
+                +.radioSelectorInner
+                    .questionLabel
+                        color: $white
+                    .skipLabel
+                        color: $white
+            .radioSelectorInner
+                height: 36px
+                width: 36px
+                border-radius: 50px
+                border: 2px solid $gray
+                cursor: pointer
+                @media ( max-width: 575px )
+                    height: 35px
+                    width: 35px

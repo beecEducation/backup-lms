@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
+  <style>
+    #toggle {
+      width: 100px;
+      height: 100px;
+      background: #ccc;
+    }
+  </style>
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <title>BEEC-LMS</title>
+  <script type="text/javascript">
+    // $(document).ready(function () {
+    function onLineRefClicked(id) {
+      var removeFill = document.querySelector(".highlight");
+      if (removeFill !== null) {
+        removeFill.classList.remove("highlight");
+      }
+      const element = document.getElementById(id);
+      element.classList.add("highlight");
+      var removeFill = document.querySelector(".highlight");
+      if (removeFill !== null) {
+        setTimeout(function () {
+          removeFill.classList.remove("highlight");
+        }, 5000);
+      }
+    }
+      // });
+  </script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".tbtn").click(function () {
+        $(this).parents(".custom-table").find(".toggler1").removeClass("toggler1").fadeOut();
+        $(this).parents("tbody").find(".toggler").fadeIn().addClass("toggler1");
+        $(this).parents(".custom-table").find(".fa-minus").removeClass("fa-minus");
+        $(this).parents("tbody").find(".fa-plus").addClass("fa-minus");
+      });
+
+
+      //~ percentile scale chart rendering
+      var percentage_array = [];
+      var bg_color_array = [];
+      var border_color_array = [];
+
+      var color_red = 'rgba(255, 79, 79, 1)';
+      var color_orange = 'rgba(252, 124, 5, 1)';
+      var color_yellow = 'rgba(252, 179, 32, 1)';
+      var color_green = 'rgba(4, 189, 4, 1)';
+      var color_dark_green = 'rgba(0, 94, 0, 1)';
+
+      $('#student-percentiles-table .mean-percentile').each(function () {
+        var meanVal = $.trim($(this).text());
+
+        if (meanVal == '') {
+          percentage_array.push(0);
+        }
+        else {
+          var percentile = parseFloat(meanVal);
+          percentage_array.push(percentile);
+
+        }
+
+        if (percentile < 34) {
+          bg_color_array.push(color_red);
+        }
+
+        else if (percentile >= 34 && percentile < 45) {
+          bg_color_array.push(color_orange);
+        }
+
+        else if (percentile >= 45 && percentile < 55) {
+          bg_color_array.push(color_yellow);
+        }
+
+        else if (percentile >= 55 && percentile < 76) {
+          bg_color_array.push(color_green);
+        }
+
+        else if (percentile >= 76) {
+          bg_color_array.push(color_dark_green);
+        }
+
+
+      });
+
+
+      const data = {
+        labels: ['VB', 'QT', 'TCS', 'RD', 'MT', 'LN', 'TBS'],
+        datasets: [{
+          label: 'Percentile Value',
+          data: percentage_array,
+          backgroundColor: bg_color_array,
+          borderColor: bg_color_array,
+          borderWidth: 1
+        }]
+      };
+
+      // config 
+      const config = {
+        type: 'bar',
+        data,
+        options: {
+          indexAxis: 'y',
+          barThickness: 3,
+          plugins: {
+            legend: {
+              display: false
+            },
+          },
+          scales: {
+            y: {
+              ticks: {
+                autoSkip: false
+              }
+            },
+            x: {
+              type: 'linear',
+              title: {
+                display: true,
+                text: 'National Percentile Scale'
+              },
+              display: true,
+              //labels: [1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+              grid: {
+                drawOnChartArea: false, // only want the grid lines for one axis to show up
+              },
+              ticks: {
+                autoSkip: false,
+                maxTicksLimit: 20
+
+              },
+              min: 0,
+              max: 100,
+              stepSize: 10
+
+            },
+            x1: {
+              type: 'category',
+              display: true,
+              position: 'top',
+              labels: ['Low', 'Below Average', 'Average', 'Above Average', 'High'],
+              grid: {
+                drawOnChartArea: false, // only want the grid lines for one axis to show up
+              },
+              ticks: {
+                autoSkip: false,
+                maxRotation: 0,
+                minRotation: 0
+              }
+            },
+          }
+        }
+      };
+
+      // render init block
+      const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+
+      //~ performance table average rendering
+      $('.student-performance-table .num-right').each(function () {
+        // $(this).parent().find('.line-graph').css('width','100%')
+        var numRight = $(this).text();
+        var numItems = $(this).parent().find('.num-items').text();
+
+        var numTotal = numRight / numItems * 100;
+
+        // if (numTotal < 34) {
+        //   $(this).parent().find('.line-graph-wrap .line-graph-left-1 .line-graph').addClass('red');
+        //   $(this).parent().find('.line-graph-wrap .line-graph-left-2 .line-graph').addClass('red');
+        // } else if (numTotal >= 34 && numTotal < 45) {
+        //   $(this).parent().find('.line-graph-wrap .line-graph-left-2 .line-graph').addClass('orange-red');
+        // } else if (numTotal >= 45 && numTotal < 55) {
+        //   $(this).parent().find('.line-graph-wrap .line-graph-center .line-graph').addClass('orange');
+        // } else if (numTotal >= 55 && numTotal < 76) {
+        //   $(this).parent().find('.line-graph-wrap .line-graph-right-1 .line-graph').addClass('green');
+        // } else if (numTotal >= 76) {
+        //   $(this).parent().find('.line-graph-wrap .line-graph-right-1 .line-graph').addClass('dark-green');
+        //   $(this).parent().find('.line-graph-wrap .line-graph-right-2 .line-graph').addClass('dark-green');
+        // }
+      });
+
+    });
+  </script>
+</body>
+
+</html>

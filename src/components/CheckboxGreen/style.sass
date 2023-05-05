@@ -1,0 +1,33 @@
+@import '../../assets/sass/variables.sass'
+.checkboxGreen
+    label
+        cursor: pointer
+        input
+            display: none
+        .checkbox-check-mark
+            position: relative
+            display: inline-block
+            border: 2px solid $gray
+            border-radius: 4px
+            width: 24px
+            height: 24px
+            float: left
+            margin-right: .5em
+            svg
+                color: $white
+                position: absolute
+                line-height: 0
+                top: 15%
+                left: 15%
+                path
+                    color: $white
+        input[type="checkbox"]
+            +.checkbox-check-mark>svg
+                opacity: 0
+        input[type="checkbox"]:checked
+                +.checkbox-check-mark>svg
+                    opacity: 1
+        input[type="checkbox"]:checked
+                +.checkbox-check-mark
+                    background-color: $green
+                    border-color: $green

@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PDF</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root{
+            --blue:#10A0DE;
+            --green:#49A250;
+            --purple: #674f8a;
+            --grey-light:#E9E9E9;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            padding: 40px;
+        }
+        .text-bold{
+            font-weight: 500!important;
+        }
+        .text-bolder{
+            font-weight: 600!important;
+        }
+        .text-end{
+            text-align: end;
+        }
+
+        .container-fluid{
+            margin: 0;
+            padding: 0;
+        }
+        .row{
+            margin:0;
+        }
+        .heading{
+            color: var(--blue);
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .small-heading{
+            color: var(--blue);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .sub-heading{
+            padding-left: 5px;
+            color:black;
+            font-size: 15px;
+            font-weight: 400;
+            border-left: 1px solid var(--blue);
+        }
+        .total-score{
+            font-size: 60px;
+            font-weight: 700;
+            padding-right: 40px;
+        }
+        .score-range{
+            font-size: 15px;
+            font-style: italic;
+            padding-left: 10px;
+            border-left: 2px solid black;
+        }
+
+        .position{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .position-desc{
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        .total-score-div{
+            margin-bottom: 20px;
+        }
+
+        .section-score-div{
+            border-top: 1px solid black;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .section-score-div .row{
+            margin-top: 15px;
+        }
+
+        .small-score{
+            font-size: 22px;
+            font-weight: 600;
+            padding-right: 10px;
+        }
+
+        .small-score-range{
+            font-size: 15px;
+            padding-left: 10px;
+            border-left: 1px solid black;
+        }
+        .small-score-desc{
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        .small-position{
+            font-size: 13px;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+
+        .small-position-desc{
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        .check-icon{
+            font-size: 30px;
+            color: var(--green);
+        }
+
+        .benchmark-desc{
+            font-size: 13px;
+            line-height: 1.0;
+            margin-top: 5px;
+        }
+
+        .test-score-div{
+            border-top: 1px solid black;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+        .cross-test-score-div{
+            border-top: 1px solid black;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+        .cross-test-score-div .small-score{
+           font-weight: 600;
+            font-size: 15px;
+        }
+
+        .sub-score-div{
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+        .sub-score-div .small-score{
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .profile-detail-div .profile-item .label{
+            font-weight: 400;
+            font-size: 13px;
+            margin: 0;
+        }
+        .profile-detail-div .profile-item .value{
+            font-weight: 600;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .faq-div{
+            margin-top: 80px;
+        }
+        .faq-item .question{
+            color: var(--blue);
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .faq-item .answer{
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .faq-item .bold{
+            font-weight: 600;
+        }
+
+        .student-response-div .response-item{
+            border: 1px solid var(--purple);
+            padding:0;
+            height: 100%;
+        }
+        .student-response-div .response-item p{
+           margin: 0;
+            margin-left: 5px;
+            font-weight: 500;
+        }
+        .student-response-div .response-item .response-table{
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .student-response-div .response-item .response-table thead{
+            background-color: var(--grey-light);
+        }
+
+        .student-response-div .response-item .response-table thead th{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .student-response-div .response-item .response-table tbody td{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .student-response-div .response-item .response-table thead .th-bold{
+            font-weight: 600;
+        }
+        .student-response-div .response-item .response-table thead .th-italic{
+            font-style: italic;
+        }
+        .test-label{
+            font-size: 13px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        .test-value{
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .cross-test-category{
+            border-top: 1px solid black;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+        .cross-category-table{
+            width: 100%;
+        }
+        .cross-category-table th{
+            color: var(--blue);
+            font-weight: 400;
+        }
+        .cross-category-table tr{
+            line-height: 2.5;
+        }
+        .cross-category-table td{
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+
+        .skill-analysis{
+            border-top: 1px solid black;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+        .skill-analysis-table{
+            width: 100%;
+        }
+        .skill-analysis-table th{
+            color: var(--blue);
+            font-weight: 400;
+        }
+        .skill-analysis-table td{
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .skill-analysis-table .bg-gray{
+            background-color: var(--grey-light);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="total-score-div">
+                <p class="heading">Your total score</p>
+                <div class="d-flex align-items-center">
+                    <div class="total-score">1090</div>
+                    <div class="score-range">400-<br/>1600</div>
+                </div>
+                <div class="row">
+                    <div class="col-4 flex-column">
+                        <div class="position">
+                            65th
+                        </div>
+                        <div class="position-desc">
+                            Nationally Representative Sample Percentile
+                        </div>
+                    </div>
+                    <div class="col-4 flex-column">
+                        <div class="position">
+                            57th
+                        </div>
+                        <div class="position-desc">
+                            SAT User Percentile
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section-score-div">
+                <p class="heading">Section Scores</p>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">530</div>
+                            <div class="small-score-range">200-800</div>
+                        </div>
+                        <div class="small-score-desc">
+                            Your event based reading and writing score
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex flex-row">
+                                <div class="small-position">65th</div>
+                                <div class="small-position-desc">Nationally Representative Sample Percentile</div>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <div class="small-position">57th</div>
+                                <div class="small-position-desc">SAT User Percentile</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 d-flex justify-content-center align-items-center flex-column">
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                        <p class="text-center benchmark-desc">You have met the benchmark</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">570</div>
+                            <div class="small-score-range">200-800</div>
+                        </div>
+                        <div class="small-score-desc">
+                            Your Math score
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex flex-row">
+                                <div class="small-position">65th</div>
+                                <div class="small-position-desc">Nationally Representative Sample Percentile</div>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <div class="small-position">57th</div>
+                                <div class="small-position-desc">SAT User Percentile</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 d-flex justify-content-center align-items-center flex-column">
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                        <p class="text-center benchmark-desc">You have met the benchmark</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="test-score-div">
+                <p class="heading">Test Scores</p>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">13</div>
+                            <div class="small-score-range">10-40</div>
+                        </div>
+                        <div class="small-score-desc">
+                            Reading
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">38</div>
+                            <div class="small-score-range">10-40</div>
+                        </div>
+                        <div class="small-score-desc">
+                            Writing and language
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">25</div>
+                            <div class="small-score-range">10-40</div>
+                        </div>
+                        <div class="small-score-desc">
+                            Math
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="cross-test-score-div">
+                <p class="heading">Test Scores <span class="sub-heading">10-40</span></p>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">24</div>
+                        </div>
+                        <div class="small-score-desc">
+                            Analysis in History / Social studies
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">27</div>
+                        </div>
+                        <div class="small-score-desc">
+                           Analysis in Science
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="sub-score-div">
+                <p class="heading">SubScores <span class="sub-heading">1-15</span></p>
+                <div class="row">
+                    <div class="col-3 mt-3">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">10</div>
+                        </div>
+                        <div class="small-score-desc">
+                           Command of evidence
+                        </div>
+                    </div>
+
+                    <div class="col-3 mt-3">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">8</div>
+                        </div>
+                        <div class="small-score-desc">
+                            Word in Context
+                        </div>
+                    </div>
+                    <div class="col-3 mt-3">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">10</div>
+                        </div>
+                        <div class="small-score-desc">
+                            Command of evidence
+                        </div>
+                    </div>
+
+                    <div class="col-3 mt-3">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">8</div>
+                        </div>
+                        <div class="small-score-desc">
+                            Word in Context
+                        </div>
+                    </div>
+                    <div class="col-3 mt-3">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">10</div>
+                        </div>
+                        <div class="small-score-desc">
+                            Command of evidence
+                        </div>
+                    </div>
+
+                    <div class="col-3 mt-3">
+                        <div class="d-flex align-items-center">
+                            <div class="small-score">8</div>
+                        </div>
+                        <div class="small-score-desc">
+                            Word in Context
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-5">
+            <div class="profile-detail-div">
+                <div class="profile-item">
+                    <p class="label">Student Name</p>
+                    <p class="value">Auderny Corando</p>
+                </div>
+                <div class="profile-item">
+                    <p class="label">Student ID</p>
+                    <p class="value">12344</p>
+                </div>
+                <div class="profile-item">
+                    <p class="label">Test Date</p>
+                    <p class="value">April 2, 2022</p>
+                </div>
+                <div class="profile-item">
+                    <p class="label">Test Name</p>
+                    <p class="value">SAT#02</p>
+                </div>
+            </div>
+
+            <div class="faq-div">
+                <div class="faq-item">
+                    <p class="question">Am I on Track for College?</p>
+                    <p class="answer">
+                        Look for the green or yellow symbols next to your
+                        section scores. They let you know if your scores are at or
+                        above the benchmark scores. Benchmarks show college
+                        readiness. If yip see green, you're on track to be ready for
+                        college when you graduate.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <p class="question">Benchmark scores:</p>
+                    <p class="answer bold">
+                        Evidence-Based Reading and Writing; 480
+                        Math: 530
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <p class="question">How Do My Scores Compare?</p>
+                    <p class="answer">
+                        A percentile shows how you scored, compared to other
+                        students. It's a number between 1 and 99 and represents
+                        the percentage of students whose scores are equal to or
+                        below yours.
+                        For example, if your Math percentile is 57, that means 57%
+                        of test takers have Math scores equal to or below yours.
+                        The Nationally Representative Sample Percentile
+                        compares your score to the scores of typical U.S.
+                        students.
+                        SATe User Percentile compares your score to the scores
+                        of students who typically take the test.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="student-response-div">
+        <div class="heading">Student Responses and Correct Answers</div>
+        <div class="row">
+            <div class="col-3">
+               <div class=" response-item">
+                   <p>Reading</p>
+                   <table class="response-table">
+                       <thead>
+                       <tr>
+                           <th>#</th>
+                           <th class="th-bold">Std</th>
+                           <th class="th-italic">Cor</th>
+                       </tr>
+                       </thead>
+
+                       <tbody>
+                       <tr>
+                           <td>1</td>
+                           <td>A</td>
+                           <td>✓</td>
+                       </tr>
+                       <tr>
+                           <td>2</td>
+                           <td>D</td>
+                           <td>✓</td>
+                       </tr>
+                       <tr>
+                           <td>3</td>
+                           <td>A</td>
+                           <td>C</td>
+                       </tr>
+                       <tr>
+                           <td>1</td>
+                           <td>A</td>
+                           <td>✓</td>
+                       </tr>
+                       <tr>
+                           <td>2</td>
+                           <td>D</td>
+                           <td>✓</td>
+                       </tr>
+                       <tr>
+                           <td>3</td>
+                           <td>A</td>
+                           <td>C</td>
+                       </tr>
+                       <tr>
+                           <td>1</td>
+                           <td>A</td>
+                           <td>✓</td>
+                       </tr>
+                       <tr>
+                           <td>2</td>
+                           <td>D</td>
+                           <td>✓</td>
+                       </tr>
+                       <tr>
+                           <td>3</td>
+                           <td>A</td>
+                           <td>C</td>
+                       </tr>
+                       </tbody>
+                   </table>
+               </div>
+            </div>
+            <div class="col-3">
+                <div class=" response-item">
+                    <p>Writing</p>
+                    <table class="response-table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th class="th-bold">Std</th>
+                            <th class="th-italic">Cor</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>D</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>D</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>D</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A</td>
+                            <td>C</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class=" response-item">
+                    <p>Math (no cal)</p>
+                    <table class="response-table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th class="th-bold">Std</th>
+                            <th class="th-italic">Cor</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>D</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>D</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>D</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A</td>
+                            <td>C</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class=" response-item">
+                    <p>Math</p>
+                    <table class="response-table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th class="th-bold">Std</th>
+                            <th class="th-italic">Cor</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>D</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>D</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>D</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>D</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A</td>
+                            <td>C</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row mt-4">
+        <div class="col-8">
+            <p class="heading">Performance Indicator</p>
+        </div>
+        <div class="col-4">
+            <p class="text-bold text-end">Andaury corando#2</p>
+        </div>
+        <div class="col-8">
+            <p class="text-bold">Andaury corando-ID#2</p>
+        </div>
+        <div class="col-4">
+            <p class="small-heading text-end">Question Category Analysis</p>
+        </div>
+        <div class="col-12">
+            <p class="test-label">Test Name: <strong class="test-value">SAT practice #1</strong></p>
+            <p class="test-label">Test Date: <strong class="test-value">Apr 01,2022</strong></p>
+        </div>
+    </div>
+
+    <div class="cross-test-category">
+        <table class="cross-category-table">
+            <thead>
+                <tr>
+                    <th>Cross-Test Categories</th>
+                    <th>Correct</th>
+                    <th>Correct</th>
+                    <th>Incorrect</th>
+                    <th>Omitted</th>
+                    <th>Incorrect and Omitted Questions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Analysis in History/Social Studies</td>
+                    <td>46%</td>
+                    <td>16</td>
+                    <td>19</td>
+                    <td>0</td>
+                    <td>1.12,1.14,1.23,2.3,2.5,2.7</td>
+                </tr>
+                <tr>
+                    <td>Analysis in Science</td>
+                    <td>54%</td>
+                    <td>21</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="skill-analysis">
+        <table class="skill-analysis-table">
+            <thead>
+            <tr>
+                <th>Skill Analysis</th>
+                <th>Correct</th>
+                <th>Correct</th>
+                <th>Incorrect</th>
+                <th>Omitted</th>
+                <th>Incorrect and Omitted Questions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="6" class="text-bolder">Reading</td>
+            </tr>
+            <tr class="bg-gray">
+                <td>COMMAND OF EVIDENCE</td>
+                <td>46%</td>
+                <td>16</td>
+                <td>19</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr>
+                <td>Textual Evidence</td>
+                <td>54%</td>
+                <td>21</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr>
+                <td>Textual Evidence</td>
+                <td>54%</td>
+                <td>21</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr>
+                <td>Textual Evidence</td>
+                <td>54%</td>
+                <td>21</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr class="bg-gray">
+                <td>COMMAND OF EVIDENCE</td>
+                <td>46%</td>
+                <td>16</td>
+                <td>19</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr>
+                <td>Textual Evidence</td>
+                <td>54%</td>
+                <td>21</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr>
+                <td>Textual Evidence</td>
+                <td>54%</td>
+                <td>21</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr>
+                <td>Textual Evidence</td>
+                <td>54%</td>
+                <td>21</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+            </tr>
+
+
+
+            <tr>
+                <td colspan="6" class="text-bolder">Writing</td>
+            </tr>
+            <tr class="bg-gray">
+                <td>COMMAND OF EVIDENCE</td>
+                <td>46%</td>
+                <td>16</td>
+                <td>19</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr>
+                <td>Textual Evidence</td>
+                <td>54%</td>
+                <td>21</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr>
+                <td>Textual Evidence</td>
+                <td>54%</td>
+                <td>21</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr>
+                <td>Textual Evidence</td>
+                <td>54%</td>
+                <td>21</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr class="bg-gray">
+                <td>COMMAND OF EVIDENCE</td>
+                <td>46%</td>
+                <td>16</td>
+                <td>19</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr>
+                <td>Textual Evidence</td>
+                <td>54%</td>
+                <td>21</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr>
+                <td>Textual Evidence</td>
+                <td>54%</td>
+                <td>21</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+            </tr>
+            <tr>
+                <td>Textual Evidence</td>
+                <td>54%</td>
+                <td>21</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1.12,1.14,1.23,2.3,2.5,2.7,1.23,2.3,2.5,2.7</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

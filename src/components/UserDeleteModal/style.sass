@@ -1,0 +1,40 @@
+@import '../../assets/sass/variables.sass'
+
+
+.modal-lg
+  @media screen and (min-width: 992px)
+    max-width: 1000px!important
+.welcome-img
+  width: 100%
+.box-body
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 100%
+  .main-text
+    margin-top: -50px
+    font-size: $font-36
+    font-family: $lato !important
+    font-weight: 900
+    color: $gray-06
+    margin-bottom: 20px
+  .sub-text
+    font-size: $font-16
+    font-family: $lato !important
+    font-weight: 400
+    margin-bottom: 40px
+  .btn-div
+    display: flex
+    justify-content: center
+    align-items: center
+    .yes-btn
+      flex: 1
+      background-color: $blue
+      border-color: $blue
+    .no-btn
+      flex: 1
+      background-color: $white
+      border-color: $blue
+      color: $blue
+      margin-right: 20px
+

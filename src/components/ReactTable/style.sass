@@ -1,0 +1,60 @@
+@import '../../assets/sass/variables.sass'
+
+.courses-table,
+.student-table,
+.transaction-table,
+.dashboardTable
+    background-color: $white
+    padding: 20px
+.myCoursesTable
+    th
+        &:first-child
+            svg
+                display: none
+.studentsTable
+    th
+        &:last-child
+            svg
+                display: none
+table.reactTable
+    width: 100%
+    th
+        font-size: $font-16
+        font-weight: 400!important
+        padding: 20px !important
+        overflow: hidden
+        white-space: nowrap
+    td
+        padding: 20px !important
+        .active
+            color: $blue
+            font-size: $font-13
+            font-family: $Barlow !important
+            font-weight: 500!important
+        span,
+        time
+            color: $black
+            font-size: $font-13
+            font-family: $Barlow !important
+            font-weight: 500!important
+        .cart-course-img
+            height: 54px
+            width: 54px
+            object-fit: cover
+            // .active
+            //     color: $blue
+    tr
+        border-bottom: 1px solid $black-light
+.reactTablePagination
+    .page-item
+        &.disabled
+            .page-link
+                color: $gray-03 !important
+                font-weight: 400 !important
+        .page-link
+            border: 1px solid $gray-03 !important
+            color: $black
+            font-size: $font-14
+            font-weight: 500 !important
+            padding: 10px 15px !important
+            font-family: $Barlow !important

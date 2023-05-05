@@ -1,0 +1,80 @@
+@import '../../assets/sass/variables.sass'
+.signin-div
+
+  .custom-input
+    height: 60px
+    width: 100%
+    padding: 20px
+    border: 1px solid $gray-dark
+  .custom-label
+    font-weight: 500
+    margin-bottom: 5px
+  .first-half
+    position: relative
+    padding-top: 40px!important
+    padding-left: 40px!important
+    padding-right: 40px!important
+    height: 100%
+    .main-title
+      margin-top: 20px
+      font-size: 25px
+      font-weight: 700
+      color: $blue
+    .sub-title
+      font-size: 25px
+      font-weight: 600
+      color: $black
+    .input-group
+      margin-top: 20px
+      .custom-label
+        font-size: $font-13
+        font-weight: 500
+        color: $black
+        sup
+          color: $blue
+      .custom-input
+        background-color: $gray-07
+        border: 1px solid $gray
+        height: 20px
+    .custom-link
+      cursor: pointer
+    .login-btn
+      width: 100%
+      background-color: $blue
+      color: $white
+      border-color: $blue
+      margin-top: 10px
+
+    .main
+      margin-top: 70px
+      font-size: $font-14
+      font-weight: 400
+      ul
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        padding: 0
+        li
+         margin-left: 20px
+         text-decoration: underline
+    .sub
+      text-align: center
+      font-size: $font-14
+      font-weight: 400
+      color: $black-light
+      text-decoration: underline
+  .second-half
+    position: relative
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    min-height: 100vh
+    &:before
+      content: ""
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background: rgba(16, 160, 222,0.4)

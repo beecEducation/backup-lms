@@ -1,0 +1,91 @@
+@import '../../assets/sass/variables.sass'
+
+.dashboard-div
+    .content
+        margin-top: 50px
+        background-color: $white
+        .content-header
+            background-color: $blue
+            color: $white
+            padding: 10px 20px
+            font-weight: 500
+        .content-body
+            .inner-cards
+                padding: 0 20px
+            .cards-row
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+        .question-keys
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            .difficulty-levels
+                padding-right: 20px
+                border-right: 1px solid $gray-dark
+                margin-top: 20px
+                margin-bottom: 20px
+                div
+                    margin-left: 20px
+            .answer-levels
+                padding-right: 20px
+                margin-top: 20px
+                margin-bottom: 20px
+                div
+                    margin-left: 20px
+        .section-tabs
+            .nav-item
+                .nav-link
+                    color: $black-light
+                    font-weight: $FWnormal
+                    font-size: $font-13
+                    background-color: $grey-light-02
+                    height: 45px
+                    border-radius: 0px
+                    &.active
+                        color: $blue
+                        font-weight: $FWbold
+                        background-color: $white
+    .filter-row
+        padding-top: 20px
+        padding-bottom: 20px
+        display: flex
+        flex: 1
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        background-color: $gray-02
+        .filter-col
+            flex: 2
+            margin-right: 20px
+
+        .filter-col2
+            flex: 1
+            display: inline-block
+            vertical-align: middle
+
+    .table-header
+        background-color: $blue
+        color: $white
+    .table-row
+        background-color: $white
+        color: $black-light
+        margin: 20px 0
+        border-bottom: solid $gray-02 10px
+        border-top: solid $gray-02 10px
+        .black-td
+            color: $black
+    // td
+    //     padding-top: 10px!important
+    //     padding-bottom: 10px!important
+    .answer-icon
+        height: 25px
+        width: 25px
+        border-radius: 50%
+        font-size: $font-16
+        font-weight: 600
+        background-color: $blue
+        color: $white
+        display: flex
+        justify-content: center
+        align-items: center

@@ -1,0 +1,35 @@
+@import '../../assets/sass/variables.sass'
+
+
+.quiz-nav-bar
+  background: $blue
+  color: $white
+  .navbar-brand
+    img
+      max-width: 100px
+      margin-left: 120px
+      @media ( max-width: 700px )
+        margin-left: 40px
+  .navbar-nav
+    .nav-link
+      font-family: $roboto
+      font-size: $font-14
+      color: $white
+      text-transform: uppercase
+      padding: 0 !important
+      margin: 0 1em
+  .user-menu
+    .dropdown-toggle
+      &::after
+        border-top-color: $white !important
+        margin-left: 0
+      .user-name
+        color: $white !important
+      .user-image
+        height: 45px
+        width: 45px
+        object-fit: contain
+        border-radius: 50px
+
+.cart_icon
+  max-width: 22px

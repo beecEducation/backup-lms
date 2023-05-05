@@ -1,0 +1,33 @@
+@import '../../assets/sass/variables.sass'
+
+.quiz-option
+  label
+    margin-top: 10px
+    display: flex
+    flex-direction: row
+    .option-label
+      border-radius: 50%
+      background-color: $white
+      color: $blue
+      border: 1px solid $blue
+      height: 36px
+      width: 36px
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      flex-shrink: 0
+    .option-text,
+    .choice_paragraph
+      margin-left: 20px
+      color: $black-03
+      font-size: $font-14
+      // font-weight: 500
+      margin-bottom: 0
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+    .OccupancyChecked
+      background-color: $blue
+      color: $white

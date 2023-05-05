@@ -1,0 +1,45 @@
+@import '../../assets/sass/variables.sass'
+.ToggleButtonGreen
+    .questionPassage
+        cursor: pointer
+    input
+        display: none
+    .toggle-radio-slider
+        cursor: pointer
+        position: relative
+        width: 42px
+        height: 23px
+        border-radius: 100px
+        background-color: $gray
+        border: 1px solid $gray
+    input[type="checkbox"]:checked
+        +.toggle-radio-slider
+            background-color: $green
+            border: 1px solid $green
+    .toggle-radio-button
+        position: absolute
+        cursor: pointer
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        -webkit-transition: .4s
+        transition: .4s
+        &::before
+            position: absolute
+            content: ""
+            height: 21px
+            width: 21px
+            left: 1px
+            bottom: 0px
+            border-radius: 100px
+            background-color: $white
+            -webkit-transition: .4s
+            transition: .4s
+    input[type="checkbox"]:checked
+        +.toggle-radio-slider
+            .toggle-radio-button
+                &::before
+                    -webkit-transform: translateX(17px)
+                    -ms-transform: translateX(17px)
+                    transform: translateX(17px)

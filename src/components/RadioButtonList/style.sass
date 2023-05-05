@@ -1,0 +1,32 @@
+@import '../../assets/sass/variables.sass'
+
+.MCQsListStyle
+    li
+        margin-bottom: 1em
+        .RadioButtonList
+            input
+                display: none
+                &:checked
+                    +.radio-button-list
+                        .radio-list-inner
+                                background-color: $blue
+            .radio-button-list
+                cursor: pointer
+                height: 24px
+                width: 24px
+                min-height: 24px
+                min-width: 24px
+                max-height: 24px
+                max-width: 24px
+                border: 1px solid $gray
+                border-radius: 12px
+                background-color: $white
+                .radio-list-inner
+                    height: 16px
+                    width: 16px
+                    border-radius: 12px
+
+            .questionPassage
+                cursor: pointer
+                .choice_paragraph
+                    margin-bottom: 0 !important

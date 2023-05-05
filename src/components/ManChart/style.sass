@@ -1,0 +1,22 @@
+@import '../../assets/sass/variables.sass'
+.man-chart-div
+  .chart-div
+    display: flex
+    flex-direction: row
+    border-bottom: 1px solid $blue
+    justify-content: space-around
+    .man-icon
+      height: 80px
+      width: 30px
+      filter: brightness(0) saturate(100%) invert(57%) sepia(1%) saturate(0%) hue-rotate(26deg) brightness(88%) contrast(90%)
+    .active
+      filter: brightness(0) saturate(100%) invert(44%) sepia(98%) saturate(618%) hue-rotate(159deg) brightness(96%) contrast(92%)
+  .arrow-icon
+    margin-left: calc(var(--data-perc) - 25px)
+    margin-top: -32px
+    color: $blue
+  .text
+    display: block
+    font-size: $font-13
+    font-weight: 500
+    color: $black-light

@@ -1,0 +1,86 @@
+@import '../../assets/sass/variables.sass'
+
+.signup-screen
+    .signup-section
+        background-color: $blue-sky
+        .registration-inner
+            background-color: $white
+            border-radius: 10px
+            @media ( min-width: 1700px )
+                align-items: center !important
+            .registration-form
+                @media ( min-width: 1700px )
+                    padding: 0 !important
+        .signup-inner
+            background-color: $white
+            border-radius: 10px
+            .signup-image
+                width: 100%
+                object-fit: cover
+                border-radius: 0 10px 10px 0
+                @media ( max-width: 991px )
+                    height: 100% !important
+            .registration-image
+                width: 100%
+                object-fit: cover
+                border-radius: 0 10px 10px 0
+                @media ( max-width: 1700px )
+                    height: 100% !important
+            .signup-heading
+                color: $black
+                font-family: $roboto
+                font-weight: bold
+                font-size: $font-36
+            .signup-summary
+                color: $black-light
+                // font-family: $Barlow
+                // font-weight: 500
+                // font-size: $font-18
+            .newRegForm
+                max-height: 625px
+                overflow-y: auto
+            .registration-form
+                .profile_pictue,
+                .profile_pictue img
+                    height: 100px
+                    width: 100px
+                    border-radius: 50%
+                    object-fit: cover
+                    label
+                        cursor: pointer
+                .signup-summary-internal
+                    color: $black-light
+                    // font-family: $Barlow
+                    // font-weight: bold
+                    // font-size: $font-14
+                .input-wrapper
+                    .signup-labels
+                        // font-size: $font-12
+                    .signup-input
+                        // font-size: $font-12
+                        height: 40px
+                    .form-select
+                        // font-size: $font-12
+                        height: 40px
+            .input-wrapper
+                margin: 0.5em 0
+                .signup-labels
+                    color: $black-light
+                    // font-family: $Barlow
+                    // font-weight: 500
+                    // font-size: $font-14
+                    // margin-bottom: 0
+                    span
+                        color: $blue
+.signup-input
+    // color: $black
+    height: 40px
+    border: 1px solid $grey-light !important
+    border-radius: 5px !important
+    &::placeholder
+        color: rgba($black-light, 0.6 ) !important
+        font-family: $Barlow
+        font-weight: 500
+        font-size: $font-13
+.form-control.is-invalid, .was-validated .form-control:invalid
+    border-color: $red !important

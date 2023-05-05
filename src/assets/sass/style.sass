@@ -1,0 +1,371 @@
+@import './variables.sass'
+// @import './fonts.sass'
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+@font-face
+    font-family: 'SerifaStd'
+    src: url('../fonts/SerifaStd-Roman.eot')
+    src: url('../fonts/SerifaStd-Roman.eot?#iefix') format('embedded-opentype'), url('../fonts/SerifaStd-Roman.woff2') format('woff2'), url('../fonts/SerifaStd-Roman.woff') format('woff'), url('../fonts/SerifaStd-Roman.ttf') format('truetype'), url('../fonts/SerifaStd-Roman.svg#SerifaStd-Roman') format('svg')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+*
+    font-family: 'Roboto', sans-serif !important
+// fonts
+.font-regular
+    font-family: 'Roboto', sans-serif !important
+
+// general styling
+.blue-button
+    color: $white !important
+    background-color: $blue !important
+    border-color: $blue !important
+    font-size: $font-14
+    border-radius: 5px !important
+    padding: 10px 15px !important
+    text-decoration: none !important
+    // @media ( max-width: 767px )
+    //     font-size: $font-22
+    &:hover
+        color: $white !important
+        background-color: $blue !important
+        border-color: $blue !important
+.blue-button-outline
+    color: $blue !important
+    background-color: $white !important
+    border-color: $blue !important
+    font-size: $font-14
+    border-radius: 5px !important
+    padding: 10px 15px !important
+    // @media ( max-width: 767px )
+    //     font-size: $font-22
+    &:hover
+        background-color: $blue !important
+        border-color: $blue !important
+        color: $white !important
+.input-toggle-switch
+    display: flex
+    align-items: center
+    .switch
+        position: relative
+        display: inline-block
+        width: 33px
+        height: 18px
+    input
+        opacity: 0
+        width: 0
+        height: 0
+        &:checked + .slider
+            // background-color: #88B466
+            background-color: $green
+            &::before
+                -webkit-transform: translateX(15px)
+                -ms-transform: translateX(15px)
+                transform: translateX(15px)
+    .slider
+        position: absolute
+        cursor: pointer
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        // background-color: #808080
+        background-color: $black-light
+        -webkit-transition: .4s
+        transition: .4s
+        &.round
+            border-radius: 100px
+            &::before
+                border-radius: 100px
+        &::before
+            position: absolute
+            content: ""
+            height: 16px
+            width: 16px
+            left: 1px
+            bottom: 1px
+            background-color: white
+            -webkit-transition: .4s
+            transition: .4s
+    label
+        color: $black-light
+.cart_icon
+    max-width: 22px !important
+
+@keyframes highlight 
+    0% 
+        background: yellow
+    
+    100% 
+        background: none
+
+.highlight
+    animation: highlight 5s
+
+.label-2
+    font-family: $Barlow !important
+    font-size: $font-9
+    font-weight: $FWmedium !important
+    font-style: italic
+
+.cart_item_count
+    position: absolute
+    top: 5px
+    right: 5px
+    height: 15px
+    width: 15px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 0.5px solid $blue
+    border-radius: 50px
+    background-color: $white
+    color: $blue
+
+.cart-section
+    .cartBg
+        height: 200px
+        object-fit: cover
+    .cart-course-img
+        width: 82px
+        height: 82px
+        object-fit: cover
+        border-radius: 5px
+    .cart-links
+        color: $blue
+        text-decoration: none
+        svg
+            color: $blue
+        img
+            max-width: 12px
+    .cart-details
+        border-bottom: 1px solid $grey-light
+    .discount-promo
+        background-color: $blue-sky
+        border-radius: 10px
+        .promo-icon
+            height: 17px
+            width: 17px
+            object-fit: cover
+        .blue-button
+            height: 40px
+            width: 90px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 5px !important
+    .promo-details
+        .discount-code
+            p
+                color: $black-light
+    .shopping-total
+        .subtotal
+            color: $black-light
+        .subtotal-amount
+            color: $black
+        .discount
+            color: $green
+        .discount-amount
+            color: $green
+        .grand
+            color: $black-light
+        .grand-amount
+            color: $black
+.emptyCart
+    img
+        max-width: 100px
+    h4
+        color: $black
+    h5
+        color: $grey-dark
+.CourseRegistration-section
+    background-image: url('../../assets/img/frames/fingerPrintTopRight.png'), url('../../assets/img/frames/dotsBottomLeft.png')
+    background-repeat: no-repeat, no-repeat
+    background-position: top right, bottom left
+    .course-detail-form
+        .course-detail-img
+            max-width: 180px
+        .list-group-item
+            color: $black-light !important
+            border-bottom: 1px solid rgba($purple,0.3 )
+        .purchase-total
+            background: #FF6256
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            height: 100px
+            span
+                font-family: $Barlow
+                font-weight: 900
+                font-size: $font-20
+                color: $white
+.course-reg-tag
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 10px 0px 0px 10px
+    padding: 3px 10px !important
+    height: 45px
+    width: 150px !important
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 0px !important
+    margin-bottom: 30px !important
+    margin-left: auto
+    .tag-name
+        color: $white
+        font-family: $Barlow
+        font-weight: 900
+        font-size: $font-16
+.questionSide
+    max-height: 65vh
+    overflow-y: auto
+.questionLabel
+    font-weight: 600
+    font-size: $font-24
+    color: $black
+.questionLabel
+    *
+        margin-bottom: 0 !important
+        font-size: $font-24
+        color: $black
+.questionTimer
+    font-weight: 600
+    font-size: $font-22
+    color: $black
+.miniLabels
+    font-weight: 400
+    font-size: $font-14
+    color: $black
+.questionPassage
+    font-weight: 400
+    font-size: $font-18
+    color: $black-opacity-70
+.questionPassage
+    *
+        font-weight: 400
+        font-size: $font-18
+        color: $black-opacity-70
+.questionTime
+    font-weight: 400
+    font-size: $font-14
+    color: $black-opacity-70
+.skipLabel
+    font-weight: 400
+    font-size: $font-12
+    color: $black
+.heading-1
+    font-family: $roboto !important
+    font-size: $font-42
+    font-weight: $FWsemiBold !important
+    line-height: 1.1
+    // color: $black
+    @media ( max-width: 767px )
+        font-size: $font-32
+.heading-2
+    font-family: $roboto !important
+    font-size: $font-36
+    font-weight: $FWsemiBold !important
+    line-height: 1
+    // color: $black
+    @media ( max-width: 767px )
+        font-size: $font-26
+.heading-3
+    font-family: $roboto !important
+    font-size: $font-32
+    font-weight: $FWsemiBold !important
+    // line-height: 1
+    // color: $black
+.heading-4
+    font-family: $roboto !important
+    font-size: $font-22
+    font-weight: $FWsemiBold !important
+    // line-height: 1
+    // color: $black
+.heading-5
+    font-family: $roboto !important
+    font-size: $font-18
+    font-weight: $FWsemiBold !important
+    // line-height: 1
+    // color: $black
+.heading-6
+    font-family: $roboto !important
+    font-size: $font-16
+    font-weight: $FWbold !important
+    // line-height: 1
+    // color: $black
+.body-1
+    font-family: $Barlow !important
+    font-size: $font-16
+    font-weight: $FWmedium !important
+    // line-height: 1
+    // color: $black
+.body-2
+    font-family: $Barlow !important
+    font-size: $font-13
+    font-weight: $FWmedium !important
+    // line-height: 1
+    // color: $black
+.label-1
+    font-family: $Barlow !important
+    font-size: $font-11
+    font-weight: $FWmedium !important
+    // line-height: 1
+    // color: $black
+.label-2
+    font-family: $Barlow !important
+    font-size: $font-9
+    font-weight: $FWmedium !important
+    font-style: italic
+
+.loaderStyling
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    // background-color: #fff
+    background-color: $white
+    height: 100vh
+    width: 100vw
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 999
+
+.sentence-marker-overwrite
+    text-decoration: none
+    color: $white
+    background-color: $black-light
+    font-size: large
+    width: 100px
+    &:hover
+        text-decoration: none
+        color: white
+// start Scrollbar styling
+
+.passage_para
+    word-spacing: 2px
+
+.question-marker
+    background-color: #0d6efd
+    color: white !important
+    font-size: medium
+    padding: 0 10px
+    border-radius: 10%
+    text-decoration: none !important
+
+.italic
+    font-style: italic
+
+::-webkit-scrollbar
+    width: 8px
+
+::-webkit-scrollbar-track
+    background-color: transparent
+
+::-webkit-scrollbar-thumb
+    background: $gray-dark
+    border-radius: 150px
+
+::-webkit-scrollbar-thumb:hover
+    background: $gray-dark
+
+// end Scrollbar styling

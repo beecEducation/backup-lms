@@ -1,0 +1,240 @@
+
+:root
+    --blue: #10a0de
+    --green: #49a250
+    --purple: #674f8a
+    --grey-light: #e9e9e9
+.print_pdf_page
+    @media print
+        .body
+            break-after: always
+
+    body
+        font-family: "Roboto", sans-serif
+        padding: 40px
+
+    .text-bold
+        font-weight: 500 !important
+
+        &er
+            font-weight: 600 !important
+
+    .text-end
+        text-align: end
+
+    .container-fluid
+        margin: 0
+        padding: 0
+
+    .row
+        margin: 0
+
+    .heading
+        color: var(--blue)
+        font-weight: 600
+        font-size: 20px
+
+    .small-heading
+        color: var(--blue)
+        font-weight: 600
+        font-size: 15px
+
+    .sub-heading
+        padding-left: 5px
+        color: black
+        font-size: 15px
+        font-weight: 400
+        border-left: 1px solid var(--blue)
+
+    .total-score
+        font-size: 60px
+        font-weight: 700
+        padding-right: 40px
+
+    .score-range
+        font-size: 15px
+        font-style: italic
+        padding-left: 10px
+        border-left: 2px solid black
+
+    .position
+        font-size: 20px
+        font-weight: 600
+
+        &-desc
+            font-size: 13px
+            font-weight: 400
+
+    .total-score-div
+        margin-bottom: 20px
+
+    .section-score-div
+        border-top: 1px solid black
+        padding-top: 20px
+        margin-bottom: 20px
+
+        & .row
+            margin-top: 15px
+
+    .small-score
+        font-size: 22px
+        font-weight: 600
+        padding-right: 10px
+
+        &-range
+            font-size: 15px
+            padding-left: 10px
+            border-left: 1px solid black
+
+        &-desc
+            font-size: 13px
+            font-weight: 400
+
+    .small-position
+        font-size: 13px
+        font-weight: 600
+        margin-right: 15px
+
+        &-desc
+            font-size: 13px
+            font-weight: 400
+
+    .check-icon
+        font-size: 30px
+        color: var(--green)
+
+    .benchmark-desc
+        font-size: 13px
+        line-height: 1
+        margin-top: 5px
+
+    .test-score-div
+        border-top: 1px solid black
+        padding-top: 20px
+        margin-bottom: 20px
+
+    .cross-test-score-div
+        border-top: 1px solid black
+        padding-top: 20px
+        margin-bottom: 20px
+
+        & .small-score
+            font-weight: 600
+            font-size: 15px
+
+    .sub-score-div
+        padding-top: 20px
+        margin-bottom: 20px
+
+        & .small-score
+            font-weight: 600
+            font-size: 15px
+
+    .profile-detail-div .profile-item .label
+        font-weight: 400
+        font-size: 13px
+        margin: 0
+
+    .profile-detail-div .profile-item .value
+        font-weight: 600
+        font-size: 20px
+        margin: 0
+
+    .faq-div
+        margin-top: 80px
+
+    .faq-item .question
+        color: var(--blue)
+        font-size: 15px
+        font-weight: 600
+
+    .faq-item .answer
+        font-size: 15px
+        font-weight: 400
+
+    .faq-item .bold
+        font-weight: 600
+
+    .student-response-div
+        page-break-before: always
+
+    .student-response-div .response-item
+        border: 1px solid var(--purple)
+        padding: 0
+        height: 100%
+
+        & p
+            margin: 0
+            margin-left: 5px
+            font-weight: 500
+
+        & .response-table
+            width: 100%
+            text-align: center
+
+        & .response-table thead
+            background-color: var(--grey-light) !important
+
+        & .response-table thead th
+            font-size: 15px
+            font-weight: 500
+
+        & .response-table tbody td
+            font-size: 15px
+            font-weight: 500
+
+        & .response-table thead .th-bold
+            font-weight: 600
+
+        & .response-table thead .th-italic
+            font-style: italic
+
+    .test-label
+        font-size: 13px
+        font-weight: 400
+        margin-bottom: 0
+
+    .test-value
+        font-size: 13px
+        font-weight: 600
+
+    .cross-test-category
+        border-top: 1px solid black
+        padding-top: 20px
+        margin-bottom: 20px
+
+    .cross-category-table
+        width: 100%
+
+        & th
+            color: var(--blue)
+            font-weight: 400
+
+        & tr
+            line-height: 2.5
+
+        & td
+            font-size: 14px
+            font-weight: 400
+
+    .skill-analysis
+        border-top: 1px solid black
+        padding-top: 20px
+        margin-bottom: 20px
+
+        &-table
+            width: 100%
+
+        &-table th
+            color: var(--blue)
+            font-weight: 400
+            font-size: 14px
+            &:first-child
+                width: 200px
+
+        &-table td
+            font-size: 14px
+            font-weight: 400
+
+        &-table .bg-gray
+            background-color: var(--grey-light) !important

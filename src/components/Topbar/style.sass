@@ -1,0 +1,19 @@
+@import '../../assets/sass/variables'
+
+.main-top-bar
+    background: $blue-gradient
+    .navbar-brand
+        img
+            max-width: 100px
+    .user-menu
+        .dropdown-toggle
+            &::after
+                border-top-color: $white-opacity-50 !important
+                margin-left: 0
+            .user-name
+                color: $white !important
+            .user-image
+                height: 45px
+                width: 45px
+                object-fit: contain
+                border-radius: 50px

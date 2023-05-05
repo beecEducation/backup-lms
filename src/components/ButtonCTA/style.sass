@@ -1,0 +1,36 @@
+@import '../../assets/sass/variables.sass'
+
+.blueButtonCTA
+    border-radius: 5px
+    text-decoration: none !important
+    height: 40px
+    min-width: 105px
+    display: flex
+    justify-content: center
+    align-items: center
+    &.lightBlueButton
+        background-color: $blue-light
+        color: $white
+    &.darkBlueButton
+        background-color: $blue-dark
+        color: $white
+
+    &.purpleButton
+        background-color: $purple
+        color: $white
+        min-width: 120px !important
+        font-family: $roboto
+        font-weight: 600
+        font-size: $font-14
+    &.whiteButton
+        background-color: $white
+        color: $blue
+        min-width: 120px !important
+        font-family: $roboto
+        font-weight: 600
+        font-size: $font-14
+.whiteButton
+    &:hover
+        color: $white
+        background-color: $blue-dark
+
